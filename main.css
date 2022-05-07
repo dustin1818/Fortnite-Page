@@ -140,6 +140,13 @@ nav .download-button:hover {
   width: 58px !important;
 }
 
+@media screen and (max-width: 550px) {
+  .nav-line::before {
+    display: none;
+    position: relative;
+  }
+}
+
 .welcome {
   position: relative;
   top: 15rem;

@@ -147,6 +147,11 @@ nav {
   background: rgba(255, 254, 254, 0.932) !important;
   height: 2px;
   width: 58px !important;
+
+  @media screen and (max-width: 550px) {
+    display: none;
+    position: relative;
+  }
 }
 
 // welcome
