@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: radial-gradient(#f9d349, 20%, #d57e12) !important;
+  color: #f3fcf6;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.button {
+  color: #f3fcf6;
+  font-size: 0.813rem;
+  background: transparent;
+  border: solid 1px #f3fcf6;
+  padding: 0.55rem 1.52rem;
+  border-radius: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  padding: 0.35rem;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+  margin-left: auto;
+  height: 100%;
+}
+
+nav .nav-logo h1 {
+  font-size: 1.85rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+nav .nav-menu {
+  margin-left: auto;
+  margin-right: 10rem;
+}
+
+nav .nav-menu .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 4rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-menu .nav-list .nav-item .nav-link {
+  color: #f3fcf6;
+  font-size: 1rem;
+}
+
+nav .download-button:hover {
+  background: #f88e0d;
+}
+
+.nav-line {
+  position: relative !important;
+}
+
+.nav-line::before {
+  content: '';
+  bottom: -2.4px !important;
+  position: absolute;
+  border: 1px rgba(255, 254, 254, 0.92) !important;
+  background: rgba(255, 254, 254, 0.932) !important;
+  height: 2px;
+  width: 58px !important;
+}
+
+.welcome {
+  position: relative;
+  top: 15rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left .small-caption {
+  margin-top: auto;
+  font-size: 0.91rem;
+}
+
+.left .left-wrapper {
+  margin: auto 0;
+  margin-top: 1rem;
+}
+
+.left .left-wrapper .big-title {
+  font-size: 5.5rem;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+}
+
+.left .left-wrapper .welcome-description {
+  max-width: 480px;
+  margin: 10px 0 40px;
+  font-size: 0.813rem;
+}
+
+.left .left-wrapper .button-container {
+  gap: 1.35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left .left-wrapper .button-container .play-now-btn {
+  color: #342e1f;
+  background: #fff;
+  font-weight: 900;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+
+.left .left-wrapper .button-container .watch-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.32rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.left .left-wrapper .button-container .watch-btn:hover {
+  background: #f88e0d;
+}
+
+.left .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.icon-box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #1e1e1e;
+}
+
+.right {
+  max-width: 100%;
+  z-index: 20;
+  position: relative;
+  height: 620px;
+  width: 900px;
+}
+
+.right .welcome-img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -58px;
+}
+
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .right .welcome-img {
+    right: -93px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  nav .nav-logo h1 {
+    font-size: 1.25rem !important;
+  }
+  nav .nav-menu {
+    margin-right: 2rem;
+  }
+  nav .nav-menu .nav-list {
+    gap: 2rem;
+  }
+  .nav-link {
+    font-size: 0.85rem !important;
+  }
+  .button {
+    padding: 0.25rem 1.1rem;
+  }
+  .welcome {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    top: 7rem;
+    gap: 3rem;
+  }
+  .welcome .left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .welcome .left .icons-container {
+    margin: 30px 0 30px 0;
+  }
+  .welcome .right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 500px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .welcome .right .welcome-img {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: 650px;
+  }
+  .welcome .right {
+    height: 420px;
+  }
+  .welcome .left {
+    margin: 0 2rem;
+  }
+  .left .left-wrapper .big-title {
+    font-size: 4.5rem;
+  }
+  .left .left-wrapper .welcome-description {
+    margin: 10px 0 20px;
+  }
+  .ri-2x {
+    font-size: 1.6em;
+  }
+  .play-now-btn {
+    padding: 0.45rem 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 10px;
+  }
+  nav.nav-logo h1 {
+    font-size: 1.2rem;
+  }
+  .nav-link {
+    display: none;
+  }
+  nav .nav-menu .nav-list {
+    gap: 0.92rem !important;
+  }
+  .download-button {
+    font-size: 0.72rem;
+  }
+  .left .left-wrapper .big-title {
+    font-size: 3rem;
+  }
+  .left .left-wrapper .welcome-description {
+    font-size: 0.752rem;
+    text-align: justify;
+  }
+  .welcome .right {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .button-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=main.css.map */
